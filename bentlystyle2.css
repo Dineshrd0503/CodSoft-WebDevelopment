@@ -1,0 +1,355 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f939;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b3c3f9;
+    margin-bottom: 10px;
+    /* Example of changing position */
+    margin-top: 2px; /* Adds space above */
+    /* or */
+    padding: 5px;
+    padding-left: 10px; /* Adds padding to the left */
+    /* or */
+    position:realtive;/* Enables absolute positioning for children */
+    left: 20px; 
+    right:30px;
+    top:20px;/* Moves the element 20px to the right */
+  }
+  
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    font-size:25px;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #ddd;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header .logo {
+    margin-top: 10px;
+  }
+  
+  header .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  /* Hero Styles */
+  
+  .hero {
+        background-image: url('https://cdni.autocarindia.com/ExtraImages/20200108123615_bentley-line-up.jpg');
+        background-size: cover; /* Cover ensures the background image covers the entire container */
+        background-position: center; /* Center the background image */
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff42;
+        text-align: center;
+      }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    background-color: #bde6a6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    background-color: #23527c;
+  }
+  
+  /* Models Styles */
+  
+  .models-grid {
+    display: grid;
+    width:100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .model {
+    font-size: 15px;
+    background-color: #e6ece3a7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .model h2{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 23px;
+  }
+
+  .model img {
+    width:100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+  }
+  .model img:hover {
+    transform: scale(1.1); /* Scale up the image slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
+}
+  
+  .model h3 {
+    margin-top: 10px;
+  }
+  
+  .model p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Discounts Styles */
+  
+  #discounts ul {
+    font-size: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #discounts h2,p{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 40px;
+  }
+
+  #discounts li {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #discounts li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Recent Launches Styles */
+  
+  .recent-launches-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .recent-launch {
+    margin-top: 30px;
+    padding:30px;
+    font-size: 23px;
+    background-color: #d5ebef43;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recent-launch img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .recent-launch img:hover {
+    transform: scale(1.1); /* Scale up the image slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
+}
+  
+  .recent-launch h3 {
+    font-size:30px;
+    margin-top: 10px;
+  }
+  
+  .recent-launch p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Best Offers Styles */
+  
+  #best-offers {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#best-offers h2 {
+    font-size: 35px; /* Increase font size for the heading */
+    margin-bottom: 20px;
+}
+
+#best-offers p {
+    font-size: 23px; /* Increase font size for the paragraph */
+    margin-bottom: 20px;
+}
+
+#best-offers ul {
+    padding: 20px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#best-offers li {
+    font-size: 1.5em; /* Increase font size for the list items */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#best-offers li:last-child {
+    border-bottom: none;
+}  /* Container Styles */
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.container h2,p{
+  font-size: 25px;
+}
+  /* Form Styles */
+  
+  #contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #23527c;
+  }
+  
+  /* Button Styles */
+  
+  .btn {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #23527c;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+   .container {
+      margin: 20px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   .container {
+      margin: 10px auto;
+    }
+   .form-control {
+      margin-bottom: 15px;
+    }
+  }
+  
+  
